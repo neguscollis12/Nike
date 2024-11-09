@@ -15,6 +15,7 @@ public abstract class BaseTest {
         driver = new ChromeDriver();
         System.setProperty("webdriver.chrome.driver" , "/Users/neguscollis/Desktop/Coding/Nike/src/test/resources/driver/chromedriver");
         driver.get("https://www.nike.com");
+        driver.manage().window().maximize();
 
 
 
@@ -23,7 +24,7 @@ public abstract class BaseTest {
 
     @AfterMethod
     public void cleanUp(){
-        driver.quit();
+        //driver.quit();
     }
 
 
